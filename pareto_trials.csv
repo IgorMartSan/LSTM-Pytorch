@@ -1,0 +1,3 @@
+trial_number,MAE,RMSE,MAPE,val_loss_best,params
+202,1.0530707836151123,1.6357351541519165,1.1032378673553467,0.005179275768116499,"{'sequence_length': 110, 'hidden_size': 128, 'num_layers': 1, 'dropout': 0.21335680929618683, 'learning_rate': 0.003599478200359756, 'batch_size': 32, 'max_epochs': 60, 'patience': 10}"
+846,1.0530775785446167,1.6246287822723389,1.105041742324829,0.005075674293897091,"{'sequence_length': 110, 'hidden_size': 256, 'num_layers': 1, 'dropout': 0.22930130270824217, 'learning_rate': 0.003599478200359756, 'batch_size': 64, 'max_epochs': 120, 'patience': 20}"

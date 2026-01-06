@@ -1,3 +1,3 @@
-trial_number,MAE,RMSE,MAPE,val_loss_best,params
-202,1.0530707836151123,1.6357351541519165,1.1032378673553467,0.005179275768116499,"{'sequence_length': 110, 'hidden_size': 128, 'num_layers': 1, 'dropout': 0.21335680929618683, 'learning_rate': 0.003599478200359756, 'batch_size': 32, 'max_epochs': 60, 'patience': 10}"
-846,1.0530775785446167,1.6246287822723389,1.105041742324829,0.005075674293897091,"{'sequence_length': 110, 'hidden_size': 256, 'num_layers': 1, 'dropout': 0.22930130270824217, 'learning_rate': 0.003599478200359756, 'batch_size': 64, 'max_epochs': 120, 'patience': 20}"
+trial_number,MAE,RMSE,MAPE,val_loss_best,checkpoint_path,params
+59,1.1747260093688965,1.7331955432891846,1.2255662679672241,0.005471475537077253,checkpoints/trial_59.pt,"{'sequence_length': 50, 'hidden_size': 256, 'num_layers': 2, 'learning_rate': 0.004382289465422788, 'batch_size': 64}"
+23,1.1690629720687866,1.7031197547912598,1.2258139848709106,0.005273991663541112,checkpoints/trial_23.pt,"{'sequence_length': 50, 'hidden_size': 256, 'num_layers': 2, 'learning_rate': 0.0015007610194262726, 'batch_size': 64}"

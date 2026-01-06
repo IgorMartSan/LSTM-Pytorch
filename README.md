@@ -30,3 +30,27 @@
 
 
 optuna-dashboard sqlite:///optuna_study.db
+
+
+Passo 2 – Crie o ambiente virtual
+python3 -m venv .venv
+
+Passo 3 – Ative o ambiente
+source .venv/bin/activate
+
+
+Vai aparecer no terminal:
+
+(.venv)
+
+Passo 4 – Atualize o pip
+pip install --upgrade pip
+
+Passo 5 – Instale os requirements
+pip install -r requirements.txt
+
+Passo 6 – Teste se tudo instalou
+python -c "import torch, optuna, yfinance, pandas; print('OK, tudo instalado')"
+
+Passo 7 – Rodar o projeto
+python run_optuna.py

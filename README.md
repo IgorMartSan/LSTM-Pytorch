@@ -7,12 +7,12 @@
 - [x] Separar dados para treino e validação/teste
 
 ## 2. Desenvolvimento do Modelo LSTM (obrigatório)
-- [ ] Implementar um modelo LSTM para prever o valor de fechamento (Close)
-- [ ] Treinar o modelo e ajustar hiperparâmetros para melhorar desempenho
-- [ ] Avaliar o modelo com métricas (MAE, RMSE, MAPE ou outra apropriada)
+- [x] Implementar um modelo LSTM para prever o valor de fechamento (Close)
+- [x] Treinar o modelo e ajustar hiperparâmetros para melhorar desempenho
+- [x] Avaliar o modelo com métricas (MAE, RMSE, MAPE ou outra apropriada)
 
 ## 3. Salvamento e Exportação do Modelo (obrigatório)
-- [ ] Salvar o modelo treinado em formato adequado para inferência
+- [x] Salvar o modelo treinado em formato adequado para inferência
 
 ## 4. Deploy do Modelo em API (obrigatório)
 - [ ] Criar uma API REST usando Flask ou FastAPI para servir o modelo

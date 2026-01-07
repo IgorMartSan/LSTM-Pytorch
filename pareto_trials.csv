@@ -1,3 +1,2 @@
 trial_number,MAE,RMSE,MAPE,val_loss_best,checkpoint_path,params
-59,1.1747260093688965,1.7331955432891846,1.2255662679672241,0.005471475537077253,checkpoints/trial_59.pt,"{'sequence_length': 50, 'hidden_size': 256, 'num_layers': 2, 'learning_rate': 0.004382289465422788, 'batch_size': 64}"
-23,1.1690629720687866,1.7031197547912598,1.2258139848709106,0.005273991663541112,checkpoints/trial_23.pt,"{'sequence_length': 50, 'hidden_size': 256, 'num_layers': 2, 'learning_rate': 0.0015007610194262726, 'batch_size': 64}"
+105,1.1406041383743286,1.6908037662506104,1.2096115350723267,0.005090519464735327,checkpoints_v2/trial_105.pt,"{'sequence_length': 50, 'hidden_size': 256, 'num_layers': 2, 'dropout': 0.2257264486294864, 'learning_rate': 0.004382289465422788, 'batch_size': 32, 'max_epochs': 60, 'patience': 25}"

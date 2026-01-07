@@ -72,41 +72,6 @@ def train_single_trial(
 
         val_loss = compute_val_loss_mse(model, val_loader, device)
 
-        # (Opcional) pruning: Optuna precisa de trial.report + trial.should_prune
-        # e isso FUNCIONA mesmo em multi-objective em versões recentes,
-        # mas se você preferir evitar, deixe desativado.
-        for epoch in range(1, cfg.max_epochs + 1):
-            model.train()
-            running = 0.0
-            n = 0
-
-            for x, y in train_loader:
-                x = x.to(device)
-                y = y.to(device)
-
-                pred = model(x)
-                loss = criterion(pred, y)
-
-                optimizer.zero_grad(set_to_none=True)
-                loss.backward()
-                torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
-                optimizer.step()
-
-                running += loss.item() * x.size(0)
-                n += x.size(0)
-
-            val_loss = compute_val_loss_mse(model, val_loader, device)
-
-            # ✅ Multi-objective: sem trial.report / pruning
-            if val_loss < best_val - 1e-7:
-                best_val = val_loss
-                best_state = {k: v.detach().cpu().clone() for k, v in model.state_dict().items()}
-                no_improve = 0
-            else:
-                no_improve += 1
-                if no_improve >= cfg.patience:
-                    break
-
         if val_loss < best_val - 1e-7:
             best_val = val_loss
             best_state = {k: v.detach().cpu().clone() for k, v in model.state_dict().items()}
